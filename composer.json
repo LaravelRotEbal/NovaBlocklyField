@@ -1,23 +1,25 @@
 {
-    "name": "LaravelRotEbal/BlocklyField",
-    "description": "A Laravel Nova field.",
+    "name": "LaravelRotEbal/NovaBlocklyField",
+    "description": "A Laravel Nova Blockly field.",
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "blockly"
     ],
     "license": "MIT",
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.1.0",
+        "laravelrotebal/govnova": "^0.0.1"
     },
     "autoload": {
         "psr-4": {
-            "LaravelRotEbal\\BlocklyField\\": "src/"
+            "LaravelRotEbal\\NovaBlocklyField\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelRotEbal\\BlocklyField\\FieldServiceProvider"
+                "LaravelRotEbal\\NovaBlocklyField\\FieldServiceProvider"
             ]
         }
     },

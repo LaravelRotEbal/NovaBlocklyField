@@ -15,6 +15,7 @@
         "laravel-nova": "^1.0"
     },
     "dependencies": {
+        "blockly": "^3.20200924.4",
         "vue": "^2.5.0"
     }
 }

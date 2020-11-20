@@ -1,10 +1,11 @@
 <?php
 
-namespace LaravelRotEbal\BlocklyField;
+namespace LaravelRotEbal\NovaBlocklyField;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
+use LaravelRotEbal\GovNova\GovNova;
 
 class FieldServiceProvider extends ServiceProvider
 {
@@ -16,8 +17,9 @@ class FieldServiceProvider extends ServiceProvider
     public function boot()
     {
         Nova::serving(function (ServingNova $event) {
-            Nova::script('BlocklyField', __DIR__.'/../dist/js/field.js');
-            Nova::style('BlocklyField', __DIR__.'/../dist/css/field.css');
+            Nova::script('NovaBlocklyField', __DIR__.'/../dist/js/field.js');
+            Nova::style('NovaBlocklyField', __DIR__.'/../dist/css/field.css');
+            GovNova::media('blockly', __DIR__ . '/../dist/media/');
         });
     }
 
