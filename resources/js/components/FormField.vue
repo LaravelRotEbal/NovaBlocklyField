@@ -63,6 +63,14 @@ export default {
          */
         setInitialValue() {
             this.value = this.field.value || ''
+
+            let blocklyXml = Blockly.Xml.textToDom(this.value);
+
+            let workspace = Blockly.getMainWorkspace();
+
+            workspace.clear();
+
+            Blockly.Xml.domToWorkspace(blocklyXml, workspace);
         },
 
         /**
