@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div ref="blocklyArea" style="width: 100%; height: 100%;">
         <div class="blocklyDiv" ref="blocklyDiv">
         </div>
         <xml ref="blocklyToolbox" style="display:none">
@@ -28,6 +28,8 @@
             if (!options.toolbox) {
                 options.toolbox = this.$refs["blocklyToolbox"];
             }
+
+            Blockly.setParentContainer(this.$refs["blocklyArea"]);
 
             this.workspace = Blockly.inject(this.$refs["blocklyDiv"], options);
         }
