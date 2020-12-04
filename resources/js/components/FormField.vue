@@ -32,6 +32,8 @@ export default {
             options: {
                 media: this.field.media,
 
+                readOnly: this.field.readOnly,
+
                 collapse: this.field.collapse,
                 comments: this.field.comments,
                 disable: this.field.disable,

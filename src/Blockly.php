@@ -63,6 +63,7 @@ class Blockly extends Field
                 ]
             ],
 
+            'readOnly' => false,
             'collapse' => false,
             'comments' => false,
             'disable' => false,
