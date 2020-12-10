@@ -48,6 +48,10 @@ class Blockly extends Field
                         "contents" => [
                             [
                                 "kind" => "block",
+                                "type" => "controls_if"
+                            ],
+                            [
+                                "kind" => "block",
                                 "type" => "logic_compare"
                             ],
                             [
@@ -56,8 +60,20 @@ class Blockly extends Field
                             ],
                             [
                                 "kind" => "block",
+                                "type" => "logic_negate"
+                            ],
+                            [
+                                "kind" => "block",
                                 "type" => "logic_boolean"
-                            ]
+                            ],
+                            [
+                                "kind" => "block",
+                                "type" => "logic_null"
+                            ],
+                            [
+                                "kind" => "block",
+                                "type" => "logic_ternary"
+                            ],
                         ]
                     ]
                 ]
